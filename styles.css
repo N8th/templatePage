@@ -1,0 +1,81 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+}
+
+.scroll-container {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.content {
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+}
+
+.navbar a,
+.content a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.content p {
+  font-size: 20px;
+}
+
+.tagline {
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.button:hover {
+  background: black;
+  color: white;
+}
